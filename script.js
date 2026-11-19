@@ -153,7 +153,7 @@ document.getElementById("cart-overlay").addEventListener("click",e=>{if(e.target
 document.getElementById("whatsapp-order").addEventListener("click",()=>{
   if(!cart.length){alert("Please add at least one dish first.");return;}
   // IMPORTANT: Replace this sample with the restaurant's WhatsApp number, country code included.
-  const phone="919876543210";
+  const phone="917385620021";
   const lines=cart.map(x=>`${x.name} x ${x.qty} = ₹${x.price*x.qty}`).join("\n");
   const total=cart.reduce((s,x)=>s+x.price*x.qty,0);
   const message=`Hello The Royal Plate! I would like to place an order:\n\n${lines}\n\nTotal: ₹${total}`;
